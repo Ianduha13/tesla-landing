@@ -1,6 +1,6 @@
 .header-container{
   position: absolute;
-  top: 15%;
+  top: 15vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -16,5 +16,4 @@
   font-size: 14px;
   margin-top: 0px;
   border-bottom: 1px solid #000;
-
 }

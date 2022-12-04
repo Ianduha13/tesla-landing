@@ -1,8 +1,13 @@
+.img-container{
+  height: 100vh;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+}
 .model-s{
   max-height: 100vh;
   height: auto;
   width: 100vw;
   display: flex;
   flex: 1;
-  scroll-behavior: smooth;
+  scroll-snap-align: start;
 }
