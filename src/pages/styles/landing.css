@@ -1,0 +1,11 @@
+.model-s{
+  max-height: 100vh;
+  height: auto;
+  width: 100vw;
+}
+.header{
+  position: absolute;
+  right: 50vw;
+  top: 20vh;
+  font-size: 48px;
+}

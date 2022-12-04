@@ -1,0 +1,40 @@
+.navbar-container{
+  width: 100%;
+  height: 56px;
+  position: fixed;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 16px;
+  color: #171a20;
+  background: transparent;
+}
+.navbar-left{
+  display: flex;
+  padding-left: 64px;
+  padding-right: 64px;
+
+}
+.navbar-center{
+  padding: 0 8px
+
+}
+.navbar-right{
+  padding-right: 32px;
+}
+.center-list{
+  display: flex;
+  cursor: pointer;
+}
+.right-list{
+  display: flex;
+}
+.list-item{
+  list-style: none;
+  padding: 4px 12px;
+}
+.center-list:hover{
+  transition: opacity 0.5s ease, visibility 0s 0.5s
+}

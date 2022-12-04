@@ -1,11 +1,13 @@
-import "./App.css"
 import Navbar from "./components/Navbar"
+import LandingPage from "./pages/LandingPage"
+import "./index.css"
 
-function App() {
+const App = () => {
   return (
     <div className='App'>
       <header className='App-header'>
         <Navbar />
+        <LandingPage />
       </header>
     </div>
   )
