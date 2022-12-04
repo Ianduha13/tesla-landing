@@ -6,16 +6,20 @@
   grid-template-columns: auto auto auto;
   align-items: center;
   justify-content: space-between;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 14px;
   color: #171a20;
   background: transparent;
 }
 .navbar-left{
   display: flex;
-  padding-left: 64px;
-  padding-right: 64px;
-
+  padding-left: 48px;
+  padding-right: 96px;
+  width: 120px;
+  height: 24px;
+}
+.logo{
+  width: 110px;
 }
 .navbar-center{
   padding: 0 8px
@@ -33,7 +37,8 @@
 }
 .list-item{
   list-style: none;
-  padding: 4px 12px;
+  padding: 4px 14px;
+  font-weight: bold;
 }
 .center-list:hover{
   transition: opacity 0.5s ease, visibility 0s 0.5s

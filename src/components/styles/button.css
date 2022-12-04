@@ -1,0 +1,30 @@
+.container{
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.button-container{
+  width: 552px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.button{
+  background-color: #fff;
+  color: rgb(57, 60, 65);
+  width: 264px;
+  height: 40px;
+  padding: 4px 24px;
+  cursor: pointer;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.btn-secondary{
+  color: #fff;
+  background-color: rgba(23, 26, 32, 0.8);
+  border: 3px  rgba(23, 26, 32, 0.8);
+}

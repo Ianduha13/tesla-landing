@@ -1,0 +1,26 @@
+.arrow-container{
+	position: absolute;
+	bottom: 2.5%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	color: rgb(57, 60, 65);
+	animation: shake 2s ease-in-out infinite alternate;
+}
+@keyframes shake {
+	10%, 90% {
+		transform: translate3d(0,-1px,  0);
+	}
+	
+	20%, 80% {
+		transform: translate3d(0, 1px,  0);
+	}
+
+	30%, 50%, 70% {
+		transform: translate3d( 0, -2px, 0);
+	}
+
+	40%, 60% {
+		transform: translate3d( 0, 2px, 0);
+	}
+}
