@@ -37,9 +37,12 @@
 }
 .list-item{
   list-style: none;
-  padding: 4px 14px;
+  padding: 4px 12px;
+  margin: 0 2px;
   font-weight: bold;
+  border-radius: 4px;
 }
-.center-list:hover{
-  transition: opacity 0.5s ease, visibility 0s 0.5s
+.hover-nav{
+
+  background-color:  rgba(57, 60, 65, 0.2);
 }

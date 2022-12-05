@@ -1,5 +1,18 @@
 import "./styles/navbar.css"
+import { useState } from "react"
 const Navbar = () => {
+  const [width, setWidth] = useState()
+  const [height, setHeight] = useState()
+  const [left, setLeft] = useState()
+
+  const elem = document.querySelector("list-item")
+
+  const data = elem.getBoundingClientRect()
+  console.log(data)
+  setLeft(data.left)
+  setHeight(data.height)
+  setWidth(data.width)
+
   return (
     <nav>
       <div className='navbar-container'>
@@ -18,22 +31,44 @@ const Navbar = () => {
           </div>
         </div>
         <div className='navbar-center'>
-          <ul className='center-list'>
-            <li className='list-item'>Model S</li>
-            <li className='list-item'>Model 3</li>
-            <li className='list-item'>Model X</li>
-            <li className='list-item'>Model Y</li>
-            <li className='list-item'>Solar Roof</li>
-            <li className='list-item'>Solar Panels</li>
-          </ul>
+          <div className='center-list'>
+            <div className='list-item' key={123}>
+              <p>Model S</p>
+            </div>
+            <div className='list-item' key={234}>
+              <p>Model 3</p>
+            </div>
+            <div className='list-item' key={345}>
+              <p>Model X</p>
+            </div>
+            <div className='list-item' key={456}>
+              <p>Model Y</p>
+            </div>
+            <div className='list-item' key={567}>
+              <p>Solar Roof</p>
+            </div>
+            <div className='list-item' key={678}>
+              <p>Solar Panels</p>
+            </div>
+          </div>
         </div>
         <div className='navbar-right'>
-          <ul className='right-list'>
-            <li className='list-item'>Shop</li>
-            <li className='list-item'>Account</li>
-            <li className='list-item'>Menu</li>
-          </ul>
+          <div className='right-list'>
+            <div className='list-item' key={789}>
+              <p>Shop</p>
+            </div>
+            <div className='list-item' key={132}>
+              <p>Account</p>
+            </div>
+            <div className='list-item' key={231}>
+              <p>Menu</p>
+            </div>
+          </div>
         </div>
+        <div
+          className='hover-nav'
+          style={{ height: height, width: width, left: left }}
+        ></div>
       </div>
     </nav>
   )

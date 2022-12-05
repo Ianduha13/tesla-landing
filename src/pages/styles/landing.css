@@ -1,13 +1,14 @@
-.img-container{
+.lg-container{
   height: 100vh;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
-.model-s{
-  max-height: 100vh;
-  height: auto;
-  width: 100vw;
-  display: flex;
-  flex: 1;
+.img-modal{
+  height: 100vh;
   scroll-snap-align: start;
+}
+.home-page-img{
+  width: 100%;
+  object-fit: fill;
 }
