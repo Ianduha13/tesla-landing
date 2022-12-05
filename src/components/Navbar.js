@@ -1,18 +1,5 @@
 import "./styles/navbar.css"
-import { useState } from "react"
 const Navbar = () => {
-  const [width, setWidth] = useState()
-  const [height, setHeight] = useState()
-  const [left, setLeft] = useState()
-
-  const elem = document.querySelector("list-item")
-
-  const data = elem.getBoundingClientRect()
-  console.log(data)
-  setLeft(data.left)
-  setHeight(data.height)
-  setWidth(data.width)
-
   return (
     <nav>
       <div className='navbar-container'>
@@ -65,10 +52,6 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div
-          className='hover-nav'
-          style={{ height: height, width: width, left: left }}
-        ></div>
       </div>
     </nav>
   )
