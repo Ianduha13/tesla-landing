@@ -1,13 +1,15 @@
 import Navbar from "./components/Navbar"
-import LandingPage from "./pages/LandingPage"
+import DropdownMenu from "./components/DropdownMenu"
 import "./index.css"
+import { useState } from "react"
 
 const App = () => {
+  const [isOpen, setOpen] = useState("hidden")
   return (
     <div className='App'>
       <header className='App-header'>
-        <Navbar />
-        <LandingPage />
+        <Navbar setOpen={setOpen} />
+        <DropdownMenu isOpen={isOpen} setOpen={setOpen} />
       </header>
     </div>
   )

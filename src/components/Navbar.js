@@ -1,12 +1,12 @@
 import "./styles/navbar.css"
-const Navbar = () => {
+const Navbar = ({ setOpen }) => {
   return (
     <nav>
       <div className='navbar-container'>
         <div className='navbar-left'>
           <div className='logo'>
             <svg
-              class='tds-icon tds-icon-logo-wordmark tds-site-logo-icon'
+              className='tds-icon tds-icon-logo-wordmark tds-site-logo-icon'
               viewBox='0 0 342 35'
               xmlns='http://www.w3.org/2000/svg'
             >
@@ -18,39 +18,43 @@ const Navbar = () => {
           </div>
         </div>
         <div className='navbar-center'>
-          <div className='center-list'>
-            <div className='list-item' key={123}>
-              <p>Model S</p>
-            </div>
-            <div className='list-item' key={234}>
-              <p>Model 3</p>
-            </div>
-            <div className='list-item' key={345}>
-              <p>Model X</p>
-            </div>
-            <div className='list-item' key={456}>
-              <p>Model Y</p>
-            </div>
-            <div className='list-item' key={567}>
-              <p>Solar Roof</p>
-            </div>
-            <div className='list-item' key={678}>
-              <p>Solar Panels</p>
-            </div>
-          </div>
+          <ul className='center-list'>
+            <li className='list-item' key={123}>
+              Model S
+            </li>
+            <li className='list-item' key={234}>
+              Model 3
+            </li>
+            <li className='list-item' key={345}>
+              Model X
+            </li>
+            <li className='list-item' key={456}>
+              Model Y
+            </li>
+            <li className='list-item' key={567}>
+              Solar Roof
+            </li>
+            <li className='list-item' key={678}>
+              Solar Panels
+            </li>
+          </ul>
         </div>
         <div className='navbar-right'>
-          <div className='right-list'>
-            <div className='list-item' key={789}>
-              <p>Shop</p>
-            </div>
-            <div className='list-item' key={132}>
-              <p>Account</p>
-            </div>
-            <div className='list-item' key={231}>
-              <p>Menu</p>
-            </div>
-          </div>
+          <ul className='right-list'>
+            <li className='list-item' key={789}>
+              Shop
+            </li>
+            <li className='list-item' key={132}>
+              Account
+            </li>
+            <li
+              className='list-item'
+              key={231}
+              onClick={() => setOpen("active")}
+            >
+              Menu
+            </li>
+          </ul>
         </div>
       </div>
     </nav>

@@ -1,0 +1,29 @@
+.hidden{
+  display: none;
+}
+.active{
+  display: flex;
+  z-index: 100;
+}
+.dd-overlay{
+width: 100%;
+display: flex;
+justify-content: flex-end;
+align-items: flex-start;
+}
+.dd-menu-container{
+  width: 310px;
+  height: 100vh;
+}
+.options-menu{
+  list-style: none;
+  padding-top: 12px;
+  background: #fff;
+}
+.option-list{
+  padding: 8px 4px;
+}
+.close-btn{ 
+  position: relative;
+  padding: 16px;
+}
