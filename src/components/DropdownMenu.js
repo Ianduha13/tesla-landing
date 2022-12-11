@@ -2,7 +2,7 @@ import "./styles/dropdown.css"
 import { SiCitrix } from "react-icons/si"
 const DropdownMenu = ({ isOpen, setOpen }) => {
   return (
-    <div className={`dd-overlay ${isOpen}`}>
+    <>
       <div
         className={`dd-menu-container ${isOpen}`} //>ref={menuRef}
       >
@@ -33,7 +33,13 @@ const DropdownMenu = ({ isOpen, setOpen }) => {
           <li className='option-list'>Investor Relations</li>
         </ul>
       </div>
-    </div>
+      <div
+        className={`dd-overlay ${isOpen}`}
+        onClick={() => {
+          setOpen("hidden")
+        }}
+      ></div>
+    </>
   )
 }
 export default DropdownMenu

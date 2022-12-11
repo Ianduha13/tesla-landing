@@ -3,18 +3,22 @@
 }
 .active{
   position: fixed;
+
 }
-.dd-overlay{
-width: 100%;
-display: flex;
-justify-content: flex-end;
-align-items: flex-start;
+.dd-overlay.active{
+backdrop-filter: blur(8px);
+background: rgba(255, 255, 255, 0.2);
 z-index: 2;
+height: 100%;
+width: 100%;
 }
 .dd-menu-container{
+  position: fixed;
+  right: 0px;
   width: 310px;
   height: 100vh;
   background: #fff;
+  z-index: 3;
 }
 .options-menu{
   list-style: none;
