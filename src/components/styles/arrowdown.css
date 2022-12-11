@@ -1,6 +1,6 @@
 .arrow-container{
-	position: absolute;
-	bottom: 2.5%;
+	position: relative;
+	bottom: 180px;
 	width: 100%;
 	display: flex;
 	justify-content: center;

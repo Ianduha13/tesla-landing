@@ -7,9 +7,7 @@ const ModelCard = ({ model, imgUrl, key }) => {
   return (
     <div className='img-modal' key={key}>
       <Header header={model} />
-      <div className='img-container'>
-        <img src={`${imgUrl}`} alt={`${model}`} className='home-page-img' />
-      </div>
+      <img src={`${imgUrl}`} alt={`${model}`} className='home-page-img' />
       <Buttons />
       <ArrowDown />
     </div>

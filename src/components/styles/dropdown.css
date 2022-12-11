@@ -9,6 +9,7 @@ width: 100%;
 display: flex;
 justify-content: flex-end;
 align-items: flex-start;
+  z-index: 2;
 }
 .dd-menu-container{
   width: 310px;

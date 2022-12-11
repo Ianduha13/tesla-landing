@@ -10,6 +10,7 @@
   font-weight: 500;
   font-size: 14px;
   color: #171a20;
+  z-index: 1;
 }
 .navbar-left{
   display: flex;
