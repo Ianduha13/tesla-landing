@@ -10,12 +10,12 @@ const LandingPage = () => {
           "https://tesla-cdn.thron.com/delivery/public/image/tesla/03e533bf-8b1d-463f-9813-9a597aafb280/bvlatuR/std/4096x2560/M3-Homepage-Desktop-LHD"
         }
       />
-      <ModelCard
+      {/* {/* <ModelCard
         model={"Model Y"}
         imgUrl={
           "https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/2880x2400/Desktop-ModelY?quality=70"
         }
-      />
+      /> */}
       <ModelCard
         model={"Model S"}
         imgUrl={
@@ -40,12 +40,12 @@ const LandingPage = () => {
           "https://tesla-cdn.thron.com/delivery/public/image/tesla/4a41ec0e-7316-46a8-8ce9-e2f195ba644d/bvlatuR/std/2880x1800/Homepage-SolarRoof-Desktop-Global?quality=auto-medium&format=auto"
         }
       />
-      <ModelCard
+      {/* <ModelCard
         model={"Last one"}
         imgUrl={
           "https://tesla-cdn.thron.com/delivery/public/image/tesla/dd739764-bcaa-4263-9488-8c73bc9fb046/bvlatuR/std/0x0/dd739764-bcaa-4263-9488-8c73bc9fb046"
         }
-      />
+      /> */}
     </div>
   )
 }

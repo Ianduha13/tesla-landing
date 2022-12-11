@@ -1,4 +1,5 @@
 import "./styles/dropdown.css"
+import { SiCitrix } from "react-icons/si"
 const DropdownMenu = ({ isOpen, setOpen }) => {
   return (
     <div className={`dd-overlay ${isOpen}`}>
@@ -12,7 +13,7 @@ const DropdownMenu = ({ isOpen, setOpen }) => {
             setOpen("hidden")
           }}
         >
-          xd
+          <SiCitrix />
         </button>
         <ul className='options-menu'>
           <li className='option-list'>Existing Inventory</li>

@@ -9,7 +9,7 @@ width: 100%;
 display: flex;
 justify-content: flex-end;
 align-items: flex-start;
-  z-index: 2;
+z-index: 2;
 }
 .dd-menu-container{
   width: 310px;
@@ -21,11 +21,27 @@ align-items: flex-start;
   padding-top: 12px;
 }
 .option-list{
-  padding: 8px 4px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 4px 8px;
+  margin: 8px 4px;
+  margin-right: 24px;
+  margin-left: -12px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .close-btn{ 
   position: relative;
+  background: transparent;
+  border: 0;
   left: 260px;
   top: 12px;
   padding: 8px;
+  border-radius: 5px;
+}
+.option-list:hover{
+  background-color: rgba(0,10,0,0.1);
+}
+.close-btn:hover{
+  background-color: rgba(0,10,0,0.1);
 }
