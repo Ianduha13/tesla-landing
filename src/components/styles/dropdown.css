@@ -49,3 +49,25 @@ width: 100%;
 .close-btn:hover{
   background-color: rgba(0,10,0,0.1);
 }
+.dropdown-footer{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-start;
+  padding-left: 28px;
+}
+.footer-btn{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.footer-btn:hover{
+  background-color: rgba(0,10,0,0.1);
+}
